@@ -96,10 +96,6 @@ ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /* debug */
-  min-height: 220px;
-  min-width: 100%;
 }
 
 .white {
@@ -110,7 +106,7 @@ ul li {
 }
 
 .grey {
-  background-color: grey;
+  background-color: #f6f6f6;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -121,16 +117,8 @@ ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  /* debug */
-  min-height: 180px;
-  width: 50%;
-}
-
-/* debug */
-.container div {
-  border: 3px dashed black;
-  min-height: 40px;
+  padding: 70px;
+  width: 70%;
 }
 
 .reverse {
@@ -138,33 +126,28 @@ ul li {
 }
 
 .main-container .container div:nth-child(1) {
-  background-color: #1e90ff;
-  flex-grow: 2;
-  padding: 70px;
+  flex-shrink: 0;
 }
 
 .main-container .container div:nth-child(2) {
-  background-color: #ffc0cb;
   flex-grow: 1;
-  padding: 70px;
+  padding-top: 10px;
 }
 
 .container-green {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-
-  /* debug */
-  min-height: 360px;
-  width: 100%;
 }
 
-.container-green div {
-  background-color: #228b22;
-  width: 50%;
-  height: 65px;
-  border: 3px dashed black;
-  padding: 160px;
+.container-green div:first-child {
+  width: 70%;
+  text-align: center;
+  /* padding: 160px; */
+}
+
+.grey > h2 {
+  margin-bottom: 15px;
 }
 
 .black-container {
@@ -173,25 +156,14 @@ ul li {
   background-color: #23272a;
   align-items: flex-start;
   justify-content: center;
-
-  /* debug */
-  width: 100%;
-  min-height: 180px;
 }
 
 .black-container > div:first-child {
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-direction: row;
   margin-top: 5px;
-  min-height: 180px;
   margin-bottom: 10px;
-}
-
-/* debug */
-.box {
-  min-height: 50px;
-  border: 3px dashed black;
 }
 
 .orange {
