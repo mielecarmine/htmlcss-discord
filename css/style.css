@@ -78,7 +78,7 @@ ul li {
   background-color: white;
   padding: 10px;
   border-radius: 50px;
-  margin-top: 20px;
+  margin: 20px;
   color: black;
 }
 
@@ -137,7 +137,8 @@ ul li {
 .container-green {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  height: 1000px;
 }
 
 .container-green div:first-child {
@@ -156,24 +157,44 @@ ul li {
   background-color: #23272a;
   align-items: flex-start;
   justify-content: center;
+  width: 100%;
+  color: white;
+  padding: 40px 0;
 }
 
 .black-container > div:first-child {
-  width: 70%;
+  width: 95%;
   display: flex;
   flex-direction: row;
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
+.container-green h2 {
+  margin-top: 110px;
+  margin-bottom: 20px;
+}
+
 .orange {
-  background-color: #f08080;
   flex-grow: 2;
 }
 
 .cyan {
-  background-color: cyan;
   flex-grow: 1;
+}
+
+.orange > h2 {
+  color: #738add;
+  margin-bottom: 10px;
+}
+
+.top_text {
+  color: #738add;
+  margin-bottom: 10px;
+}
+
+.logo_ita {
+  width: 30px;
 }
 
 /* FOOTER */
@@ -192,17 +213,12 @@ ul li {
   align-items: center;
   justify-content: space-between;
   align-self: flex-end;
-  background-color: #7fffd4;
-
-  /* debug */
-  height: 60px;
-  width: 50%;
+  width: 95%;
 }
 
 .footer-button {
-  padding: 3px;
-
-  /* debug */
-  border: 3px dashed black;
-  background-color: #ffb6c1;
+  padding: 10px;
+  color: white;
+  border-radius: 50px;
+  background-color: #8ea1e1;
 }
